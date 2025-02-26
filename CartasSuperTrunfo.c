@@ -36,6 +36,10 @@ int main() {
     printf("Qual a pontuação turistica da cidade ?");
     scanf("%d",&pontotur);
 
+    
+
+
+
 
 
 
