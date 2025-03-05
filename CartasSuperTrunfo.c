@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+   
     char estado[20];
     
     char codcard[40];
@@ -16,37 +17,21 @@ int main() {
     int pontotur;
 
 
-    // COMEÇANDO AGORA A ENTRADA DE DADOS DA CARTA 2 
-
-
-    char estado_carta2;
-
-    char codcard_carta2;
-
-    char namecity_carta2;
-
-    int populacao_carta2;
-
-    float areakm_carta2;
-
-    float pib_carta2;
-
-    int pontotur_carta2;
 
     printf("CARTA 1\n");
 
 
-    printf("Qual o estado da carta ?\n");
+    printf("Qual o estado da carta 1 ?\n");
     scanf("%s", estado);
 
-    printf("Qual o codigo da carta ?\n");
+    printf("Qual o codigo da carta 1 ?\n");
     scanf("%s", codcard);
 
-    printf("Qual o nome da cidade ?\n");
+    printf("Qual o nome da cidade  ?\n");
     scanf("%s", namecity);
 
     printf("Qual a população ?\n");
-    scanf("%f", &populacao);
+    scanf("%d", &populacao);
 
     printf("Qual a area por Km² ?\n");
     scanf("%f", &areakm);
@@ -57,29 +42,77 @@ int main() {
     printf("Qual a pontuação turistica da cidade ?\n");
     scanf("%d", &pontotur);
 
+    char estadoc2[40];
 
-    // ENTRADA E SAIDA DE DADOS CARTA 2
+    char codigoc2[60];
 
-        printf (" CARTA 2\n");
+    char namecityc2[60];
+    
+    int populacaoc2;
 
-   
-        printf("Qual o codigo da carta ?\n");
-        scanf("%s", estado_carta2);
+    float areakmc2;
 
-        printf("Qual o codigo da carta ?\n");
-        scanf("%s", codcard_carta2);
+    float pib2;
 
-        printf("Qual o nome da cidade ?\n");
-        scanf("%s", namecity_carta2);
+    int pontoc2;
 
-        printf("Qual a população ?\n");
-        scanf("%d", &populacao_carta2);
+    printf("CARTA 2\n");
 
-        printf("Qual o pib da cidade ?\n");
-        scanf("%f", &pib_carta2);
+    printf("Qual o estado da carta 2 ?\n");
+    scanf("%s", estadoc2);
 
-        printf("Qual a pontuaçao turistica da cidade ?\n");
-        scanf("%d", pontotur_carta2);
+    printf("Qual o codigo da carta 2\n");
+    scanf("%s", codigoc2);
+
+    printf("Qual o nome da cidade ?\n");
+    scanf("%s", namecityc2);
+
+    printf("Qual a população\n");
+    scanf("%d", &populacaoc2);
+
+    printf("Qual a area KM² ?\n");
+    scanf("%f", &areakmc2);
+
+    printf("Qual o PIB da ciadade ?\n");
+    scanf("%f", &pib2);
+
+    printf("Qual a pontuação da carta 2 ?\n");
+    scanf("%d", &pontoc2);
+    
+    printf("CARTA 1\n");
+
+
+    printf("ESTADO: %s\n", estado);
+
+    printf("CODIGO: %s\n", codcard);
+
+    printf("NOME: %s\n", namecity);
+
+    printf("POPULAÇÃO: %d\n", &populacao);
+
+    printf(" AREA KM²: %f\n", &areakm);
+
+    printf("PIB: %f\n", &pib);
+
+    printf("PONTOS TURISTICO: %d\n", &pontotur);
+
+    printf("CARTA 2\n");
+
+    printf("ESTADO: %s\n", estadoc2);
+
+    printf("CODIGO: %s\n", codigoc2);
+
+    printf("NOME: %s\n", namecityc2);
+
+    printf("POPULAÇÃO: %d\n", &populacaoc2);
+
+    printf("AREA KM²: %f\n", &areakmc2);
+
+    printf("PIB: %f\n", &pib2);
+
+    printf("PONTOS TURISTICO: %d\n", &pontoc2);
+
 
     return 0;
+
 }
