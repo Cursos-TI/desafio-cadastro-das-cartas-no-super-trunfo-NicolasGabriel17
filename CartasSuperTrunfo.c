@@ -61,6 +61,10 @@ int main() {
 
     float pib_percapta2;
     pib_percapta2 = pib2 / populacaoc2;
+    
+    float soma1 = (pib + populacao + areakm + pontotur);
+    
+   
 
     printf("CARTA 1\n");
     printf("ESTADO: %s\n", estado);
@@ -72,6 +76,9 @@ int main() {
     printf("PONTOS TURISTICO: %d\n", pontotur);
     printf("Densidade populacional: %.2f\n", resultado_card1);
     printf("Pib percapta: %.2f\n", pib_percapta1);
+    printf("Super poder carta 1: %.2f\n", soma1);
+
+    float soma2 = (pib + populacaoc2 + areakmc2 + pontoc2);
 
     printf("CARTA 2\n");
     printf("ESTADO: %s\n", estadoc2);
@@ -83,6 +90,47 @@ int main() {
     printf("PONTOS TURISTICO: %d\n", pontoc2);
     printf("Densidade populacional: %.2f\n", resultado_card2);
     printf("Pib percapta: %.2f\n", pib_percapta2);
-
-    return 0;
-}
+    printf("Super poder carta 2: %.2f\n", soma2);
+  
+    if (pib > pib2) {
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 1 VENCEU NO PIB\n");
+    } else{
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 2 VENCEU NO PIB\n");
+    }
+    
+    if (populacao > populacaoc2) {
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 1 VENCEU NA POPULAÇÃO\n");
+    } else{
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 2 VENCEU NA POPULAÇÃO\n");
+    }
+    
+    if (areakm > areakmc2) {
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 1 VENCEU NA ÁREA\n");
+    } else{
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 2 VENCEU NA ÁREA\n");
+    }
+    
+    if (pontotur > pontoc2) {
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 1 VENCEU NOS PONTOS TURÍSTICOS\n");
+    } else {
+        printf("CARTA 1 - %s\n", namecity);
+        printf("CARTA 2 - %s\n", namecityc2);
+        printf("A CARTA 2 VENCEU NOS PONTOS TURÍSTICOS\n");
+    }
+    
+                return 0;
+            }
